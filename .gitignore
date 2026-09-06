@@ -1,0 +1,23 @@
+# Generated Unity files and local editor preferences
+MysticSquare/Library/
+MysticSquare/Temp/
+MysticSquare/Obj/
+MysticSquare/Logs/
+MysticSquare/UserSettings/
+*.csproj
+*.sln
+*.user
+
+# Builds, packaging tools downloaded locally, recordings and logs
+Build/
+Release/
+.build/
+output/
+QA/*
+!QA/music-provenance.json
+Tools/MusicScores/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*

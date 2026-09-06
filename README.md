@@ -3,7 +3,7 @@
 
 **仅供交流学习使用。**
 
-《东方怪绮谈》的 Windows x64 非官方独立重制版。本仓库用于发布游戏安装包、使用说明和作者署名。
+《东方怪绮谈》的 Windows x64 非官方独立重制版。本仓库包含 Unity 工程源码、运行所需素材、构建脚本、使用说明和作者署名，游戏程序在 Releases 下载。
 
 ## 下载
 
@@ -14,6 +14,14 @@
 - **SHA256SUMS.txt**：下载文件的 SHA-256 校验值。
 
 不需要安装 Unity、模拟器或原作游戏。
+
+## 源码与构建
+
+使用 Unity **6000.6.0f1** 打开 `MysticSquare` 目录，打开 `Assets/Scenes/Main.unity` 后运行。运行所需的图像、音频及 `.meta` 文件已经包含在工程内。
+
+在仓库根目录运行 `powershell -ExecutionPolicy Bypass -File .\Build.ps1`，执行模拟检查并生成 Windows x64 游戏。Unity 安装位置不同时，先调整 `Build.ps1` 中的 `taskUnity`。
+
+完整目录说明、素材再生成及打包步骤见 [源码说明](SOURCE.md)。
 
 ## 操作
 
